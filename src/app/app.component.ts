@@ -44,16 +44,18 @@ export class AppComponent {
   handleKeyup(event) {
     switch (event.key) {
       case 'ArrowUp': {
-        event.preventDefault();
         this.selectedItemIndex = Math.max(0, this.selectedItemIndex - 1);
         break;
       }
 
       case 'ArrowDown': {
-        event.preventDefault();
         this.selectedItemIndex++;
-        if (this.selectedItemIndex > this.items.length - 1) {
-          this.selectedItemIndex = this.items.length - 1;
+        let maxLenght = this.items.length - 1;
+        if (this.filteredItems) {
+          maxLenght = this.filteredItems.length - 1;
+        }
+        if (this.selectedItemIndex > maxLenght) {
+          this.selectedItemIndex = maxLenght;
         }
         break;
       }
