@@ -15,7 +15,7 @@ export class AppComponent {
   public items: Item[] = [
     { code: '1', text: 'Item 21' },
     { code: '2', text: 'Itam AAs12' },
-    { code: '3', text: 'Itiz 3' },
+    { code: '3', text: 'Itiz 999' },
     { code: '4', text: 'Item 422' },
   ];
 
@@ -65,11 +65,6 @@ export class AppComponent {
 
         break;
       }
-
-      case 'ArrowLeft':
-        break;
-      case 'ArrowRight':
-        break;
 
       default: {
         break;
