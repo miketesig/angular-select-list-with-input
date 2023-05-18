@@ -2,10 +2,50 @@ p {
   font-family: Lato;
 }
 .selected {
-  background-color: yellow;
+  background-color: #a5dbfd !important;
 }
- ul{
+ul {
   list-style-type: none; /* Remove bullets */
   padding: 1rem; /* Remove padding */
   margin: 0; /* Remove margins */
- }
+}
+.even {
+  background-color: #f2f2f2;
+}
+
+.table-header {
+  font-weight: bold!important;
+  background-color: #eceaea;
+  padding: 0.5em 0.6em 0.4em 0.4em!important;
+}
+
+.table-item {
+  padding: 0.5em 0.6em 0.4em 0.6em;
+  font-weight: 400;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: none;
+  border-top-color: rgba(0, 0, 0, 0.08);
+  border-right-color: rgba(0, 0, 0, 0.08);
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+  border-left-color: rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ul li:last-child {
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+.start-table-item {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: rgba(0, 0, 0, 0.08);
+}
