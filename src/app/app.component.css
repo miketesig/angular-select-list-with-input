@@ -1,0 +1,11 @@
+p {
+  font-family: Lato;
+}
+.selected {
+  background-color: yellow;
+}
+ ul{
+  list-style-type: none; /* Remove bullets */
+  padding: 1rem; /* Remove padding */
+  margin: 0; /* Remove margins */
+ }

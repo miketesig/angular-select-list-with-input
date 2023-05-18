@@ -1,0 +1,18 @@
+<div style="padding: 1rem">
+  <input
+    type="text"
+    (keyup)="handleKeyup($event)"
+    [(ngModel)]="searchInput"
+    placeholder="find..."
+  />
+  <ul>
+    <li
+      *ngFor="let item of filteredItems; let i = index"
+      [ngClass]="{ selected: i === selectedItemIndex }"
+    >
+      {{ item.text }}
+    </li>
+  </ul>
+  <pre>selectedItemIndex: {{ selectedItemIndex }}</pre>
+  <pre>selectedData: {{ selectedData | json }}</pre>
+</div>
